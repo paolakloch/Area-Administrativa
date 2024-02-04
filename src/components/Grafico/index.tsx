@@ -1,10 +1,8 @@
-import { ResponsiveContrainer } from "recharts";
-import { XAxiS } from "recharts/types/cartesian/XAxiS";
-import { BarChart } from "recharts/types/chart/BarChart";
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis } from "recharts";
 
 function Grafico() {
   return (
-    <ResponsiveContrainer>
+    <ResponsiveContainer>
       <BarChart
         layout="vertical"
         data={dados}
@@ -14,7 +12,7 @@ function Grafico() {
         <YAxis type="category"></YAxis>
         <Bar dataKey="consultas" fill="083860" barSize={30}></Bar>
       </BarChart>
-    </ResponsiveContrainer>
+    </ResponsiveContainer>
   );
 }
 
