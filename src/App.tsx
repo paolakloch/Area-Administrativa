@@ -1,4 +1,5 @@
 import "./App.css";
+import Avaliacao from "./components/Avaliacao";
 import Cabecalho from "./components/Cabecalho";
 import Container from "./components/Container";
 import Grafico from "./components/Grafico";
@@ -24,6 +25,7 @@ function App() {
         <Tabela consultas={consultas} />
         <Grafico consultas={consultas} profissionais={profissionais}></Grafico>
       </Container>
+      <Avaliacao profissionais={profissionais} />
       <Rodape />
     </>
   );
